@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loading Screen Example</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .loading-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid #cccccc;
+        border-top-color: #3498db;
+        animation: spin 1s ease-in-out infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-screen">
+      <div class="loading-icon"></div>
+    </div>
+
+    <!-- 웹 페이지의 나머지 내용들 -->
+    <h1>웹 페이지의 내용</h1>
+    <p>웹 페이지의 내용</p>
+    <!-- 나머지 내용들 끝 -->
+  </body>
+</html>
